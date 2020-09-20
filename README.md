@@ -8,6 +8,7 @@ locators.py - contains tuples of locator (CSS, XPATH, CLASS_NAME, etc.) and its 
 login_page.py - contains methods for login page tests<br/>
 main_page.py - contains methods for main page tests<br/>
 product_page.py - contains methods for main page tests<br/>
+pytest.ini - contains registered marks for pytest (unnecessary, but unregistered marks could cause warnings)<br/> 
 requirements.txt - contains packages for python venv, used in project<br/>
 test_main_page.py - contains tests for main page<br/>
 test_product_page.py - contains tests for product page<br/>
