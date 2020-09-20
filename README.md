@@ -1,5 +1,8 @@
 # SPAC-FinalProject
-Contains final project (section 4) for SeleniumPythonAutotestCourse  (https://stepik.org/course/575/)
+Contains final project (section 4) for SeleniumPythonAutotestCourse<br/>
+Link to the course: https://stepik.org/course/575/ <br/>
+
+Summary: A few auto tests for "online store". Written for Selenium + PyTest.<br/>
 
 base_page.py - contains general methods for project<br/>
 basket_page.py - contains general methods for basket page tests<br/>
@@ -12,3 +15,13 @@ pytest.ini - contains registered marks for pytest<br/>
 requirements.txt - contains packages for python venv, used in project<br/>
 test_main_page.py - contains tests for main page<br/>
 test_product_page.py - contains tests for product page<br/>
+
+<pre>
+    /\_____/\
+   /  0   0  \    Meow, feed me!
+  ( =-  ^  -= )
+   )         (
+  (           )
+ ( (  )   (  ) )
+(__(__)___(__)__)
+</pre>
