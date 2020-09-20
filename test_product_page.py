@@ -6,8 +6,6 @@ from pages.product_page import ProductPage
 
 import pytest
 
-# link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=newYear2019"
-
 
 def test_guest_can_add_product_to_basket(browser):
     link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=newYear2019"
@@ -74,10 +72,9 @@ def test_guest_cant_see_product_in_basket_opened_from_product_page(browser):
 class TestUserAddToBasketFromProductPage:
     @pytest.fixture(scope="function", autouse=True)
     def setup(self, browser):
-        link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
+        link = "http://selenium1py.pythonanywhere.com/accounts/login/"
         page = ProductPage(browser, link)
         page.open()
-        page.go_to_login_page()
         login_page = LoginPage(browser, browser.current_url)
         email = str(time.time()) + "@testmail.test"
         password = str(time.time()) + "pass"
@@ -93,7 +90,7 @@ class TestUserAddToBasketFromProductPage:
         page.add_product_price_match()
 
     def test_user_cant_see_success_message(self, browser):
-        link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
+        link = "http://selenium1py.pythonanywhere.com/catalogue/the-city-and-the-stars_95/"
         page = ProductPage(browser, link)
         page.open()
         page.should_not_be_success_message()
